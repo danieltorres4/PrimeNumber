@@ -11,57 +11,68 @@
         android:id="@+id/tv_HelloWorld"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Is it prime?"
-        android:textSize="35sp"
+        android:fontFamily="@font/emblema_one"
+        android:text="@string/app_name"
+        android:textColor="@color/purple_700"
+        android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.2" />
+        app:layout_constraintVertical_bias="0.134" />
 
     <EditText
         android:id="@+id/et_number"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:fontFamily="@font/emblema_one"
         android:gravity="center_horizontal"
-        android:hint="Enter a number"
+        android:hint="@string/hint_enter_number"
         android:inputType="number"
         android:maxLength="5"
+        android:textColor="@color/black"
+        android:textColorHint="#00897B"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_HelloWorld"
-        app:layout_constraintVertical_bias="0.17" />
+        app:layout_constraintVertical_bias="0.264"
+        android:importantForAutofill="no" />
 
     <Button
         android:id="@+id/btn_try"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/teal_200"
+        android:fontFamily="@font/emblema_one"
         android:onClick="click"
-        android:text=" Let's verify"
+        android:text="@string/btn_verify"
         android:textAllCaps="false"
+        android:textColor="@color/purple_700"
         android:textSize="28sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.855" />
+        app:layout_constraintVertical_bias="0.772"
+        tools:ignore="TextContrastCheck" />
 
     <TextView
         android:id="@+id/tv_result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/emblema_one"
+        android:textColor="@color/black"
         android:textSize="28sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.683"
+        app:layout_constraintVertical_bias="0.573"
         tools:text="Result" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

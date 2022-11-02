@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hint_enter_number">Ingresa un número</string>
+    <string name="btn_verify">Verificar</string>
+    <string name="it_is_prime">El número %d es primo</string>
+    <string name="it_is_not_prime">El número %d no es primo</string>
+    <string name="required_value">Se requiere un número</string>
+    <string name="verify">Verificar</string>
+    <string name="toast_required_value">Debes ingresar un número</string>
+</resources>

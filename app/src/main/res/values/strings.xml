@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">PrimeNumber</string>
+    <string name="app_name" translatable="false">Is it prime?</string>
+    <string name="hint_enter_number">Enter a number</string>
+    <string name="btn_verify">Let\'s verify</string>
+    <string name="it_is_prime">Number %d is prime!</string>
+    <string name="it_is_not_prime">Number %d is not prime!</string>
+    <string name="required_value">A number is required!</string>
+    <string name="verify">Let\'s verify</string>
+    <string name="toast_required_value">You should enter a number!</string>
 </resources>

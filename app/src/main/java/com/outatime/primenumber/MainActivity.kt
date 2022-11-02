@@ -3,6 +3,7 @@ package com.outatime.primenumber
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
 import com.outatime.primenumber.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -17,12 +18,18 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun click(view: View) {
-        val number = binding.etNumber.text.toString().toInt()
+        if(binding.etNumber.text.isNotEmpty()){
+            val number = binding.etNumber.text.toString().toInt()
 
-        if(isItPrime(number)){
-            binding.tvResult.text = "Number $number is prime!"
+            if(isItPrime(number)){
+                binding.tvResult.text = getString(R.string.it_is_prime, number)
+            } else {
+                binding.tvResult.text = getString(R.string.it_is_not_prime, number)
+            }
+
         } else {
-            binding.tvResult.text = "Number $number is not prime!"
+            Toast.makeText(this@MainActivity, getString(R.string.toast_required_value), Toast.LENGTH_SHORT)
+            binding.etNumber.error = getString(R.string.required_value)
         }
     }
 
